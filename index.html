@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pametni Parking UKSC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pametni Parking UKSC</h1>
+        <p>Rezerviši parking mjesto pomoću QR koda.</p>
+    </header>
+
+    <section id="rezervacija">
+        <h2>Rezervacija parkinga</h2>
+        <form id="uploadForm">
+            <label for="nalaz">Upload nalaza:</label>
+            <input type="file" id="nalaz" accept=".jpg,.png,.pdf" required>
+            <button type="submit">Pošalji nalaz</button>
+        </form>
+        <div id="qrKod"></div>
+    </section>
+
+    <section id="parkingStatus">
+        <h2>Status parkinga</h2>
+        <p>Slobodna mjesta: <span id="slobodna">10</span> / 20</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Pametni Parking UKSC</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</body>
+</html>
